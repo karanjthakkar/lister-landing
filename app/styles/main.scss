@@ -1,0 +1,91 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+// endbower
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.app__name {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.app__tagline {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.app__logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.app__download {
+  height: 47.5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.app__mockup {
+  width: 300px;
+  height: 614px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.flexslider__container {
+  position: absolute;
+  top: 75px;
+  left: 19.5px;
+  width: 259.5px;
+  height: 461px;
+  overflow: hidden;
+}
+
+.flexslider {
+  border: none;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  background-image: url(../images/bg.jpeg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: 'row';
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  align-self: center;
+  padding: 100px;
+  width: 300px;
+  color: #D7D9D8;
+}
