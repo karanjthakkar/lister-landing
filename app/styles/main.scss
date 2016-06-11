@@ -16,28 +16,29 @@ body {
 }
 
 .app__name {
-  font-size: 2.5rem;
+  font-size: 3.6rem;
   font-weight: 400;
   margin: 0;
 }
 
 .app__tagline {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  opacity: 0.8;
   margin: 0;
   padding: 0;
 }
 
 .app__logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 
 .app__download {
-  height: 47.5px;
+  height: 60px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .app__mockup {
@@ -62,13 +63,8 @@ body {
   border: none;
 }
 
-.container {
-  justify-content: center;
-  align-items: center;
-}
-
 .landing {
-  background-image: url(../images/bg.jpeg);
+  background-image: url(../images/bg1.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -79,13 +75,21 @@ body {
 .container {
   flex: 1;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .content {
+    align-self: flex-end;
+    margin-right: 80px;
+  }
+  .app__mockup {
+    align-self: flex-start;
+    margin-left: 80px;
+  }
 }
 
 .content {
   text-align: center;
   align-self: center;
-  padding: 100px;
   width: 300px;
-  color: #D7D9D8;
+  color: #F8F8F8;
 }
