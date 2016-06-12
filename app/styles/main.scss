@@ -42,8 +42,7 @@ body {
 }
 
 .app__mockup {
-  width: 300px;
-  height: 614px;
+  width: 301px;
   position: relative;
   img {
     width: 100%;
@@ -52,24 +51,48 @@ body {
 
 .flexslider__container {
   position: absolute;
-  top: 75px;
-  left: 19.5px;
-  width: 260px;
-  height: 461px;
+  top: 74px;
+  left: 19px;
+  width: 262.5px;
+  height: 465px;
   overflow: hidden;
-}
 
-.flexslider {
-  border: none;
+  .flexslider {
+    border: none;
+  }
+
+  .flex-active-slide {
+    img {
+      border-radius: 2px;
+    }
+  }
 }
 
 .landing {
-  background-image: url(../images/bg1.jpg);
+  background-image: url(../images/bg2.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: 'row';
+}
+
+.footer {
+  position: absolute;
+  color: #cdcece;
+  font-size: 0.8rem;
+  cursor: pointer;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+  }
 }
 
 .container {
@@ -78,12 +101,12 @@ body {
   justify-content: center;
   flex-direction: column;
   .content {
-    align-self: flex-end;
-    margin-right: 80px;
-  }
-  .app__mockup {
     align-self: flex-start;
     margin-left: 80px;
+  }
+  .app__mockup {
+    align-self: flex-end;
+    margin-right: 80px;
   }
 }
 
@@ -92,4 +115,56 @@ body {
   align-self: center;
   width: 300px;
   color: #F8F8F8;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    display: none;
+  }
+  .container {
+    .app__name {
+      font-size: 3.2rem;
+    }
+    .app__tagline {
+      font-size: 1rem;
+    }
+    .app__mockup {
+      width: 246px;
+      margin-right: 40px;
+    }
+    .content {
+      margin-left: 40px;
+    }
+  }
+  .flexslider__container {
+    top: 61px;
+    left: 16px;
+    width: 214px;
+    height: 379px;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer {
+    display: none;
+  }
+  .landing {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .container {
+    align-self: center;
+    margin: 40px 0 20px;
+    &:first-of-type {
+      margin-top: 20px;
+    }
+    .app__mockup, .content {
+      margin: 0;
+    }
+    .content {
+      .app__download {
+        margin-top: 20px;
+      }
+    }
+  }
 }
